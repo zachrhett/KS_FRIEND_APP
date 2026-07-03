@@ -4,107 +4,88 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>F.R.I.E.N.D. Home</title>
-
 <style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: #000;
-  }
+html,body{margin:0;padding:0;background:#000}
+.app{position:relative;width:min(100vw,430px);margin:0 auto}
+.app img{width:100%;height:auto;display:block}
+.btn{position:absolute;display:block;background:transparent}
 
-  .app {
-    position: relative;
-    width: min(100vw, 520px);
-    margin: 0 auto;
-  }
+/* top */
+.notifications{left:78%;top:2%;width:9%;height:6%}
+.profile{left:88%;top:2%;width:9%;height:6%}
 
-  .app img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+/* hero */
+.production-alert{left:37%;top:18%;width:59%;height:5%}
+.maximo-alert{left:37%;top:23.5%;width:59%;height:5%}
+.temperature-alert{left:37%;top:29%;width:59%;height:7%}
+.console{left:4%;top:38%;width:92%;height:6%}
 
-  .btn {
-    position: absolute;
-    display: block;
-    background: transparent;
-    border: 0;
-    text-decoration: none;
-  }
+/* metric cards */
+.store-scorecard-top{left:2%;top:47%;width:31%;height:12%}
+.alerts{left:34.5%;top:47%;width:31%;height:12%}
+.maximo{left:67%;top:47%;width:31%;height:12%}
 
-  .notifications { left: 73%; top: 8%; width: 8%; height: 5%; }
-  .profile { left: 81%; top: 8%; width: 8%; height: 5%; }
+.temperature{left:2%;top:61%;width:31%;height:12%}
+.sales{left:34.5%;top:61%;width:31%;height:12%}
+.labor{left:67%;top:61%;width:31%;height:12%}
 
-  .production-alert { left: 38%; top: 25%; width: 46%; height: 4.5%; }
-  .maximo-alert { left: 38%; top: 29.8%; width: 46%; height: 4.5%; }
-  .temperature-alert { left: 38%; top: 34.8%; width: 46%; height: 5.8%; }
+/* modules */
+.production{left:3%;top:77%;width:18%;height:7%}
+.temperature-module{left:22%;top:77%;width:18%;height:7%}
+.inventory{left:41%;top:77%;width:18%;height:7%}
+.ordering{left:60%;top:77%;width:18%;height:7%}
+.fresh-start{left:79%;top:77%;width:18%;height:7%}
 
-  .console { left: 12%; top: 42%; width: 72%; height: 4.5%; }
+.safety{left:3%;top:85%;width:18%;height:7%}
+.labor-module{left:22%;top:85%;width:18%;height:7%}
+.sales-module{left:41%;top:85%;width:18%;height:7%}
+.shrink{left:60%;top:85%;width:18%;height:7%}
+.food-safety{left:79%;top:85%;width:18%;height:7%}
 
-  .store-scorecard-top { left: 11%; top: 48.5%; width: 25%; height: 8%; }
-  .alerts { left: 37%; top: 48.5%; width: 25%; height: 8%; }
-  .maximo { left: 63%; top: 48.5%; width: 25%; height: 8%; }
-
-  .temperature { left: 11%; top: 58.5%; width: 25%; height: 8%; }
-  .sales { left: 37%; top: 58.5%; width: 25%; height: 8%; }
-  .labor { left: 63%; top: 58.5%; width: 25%; height: 8%; }
-
-  .production { left: 12%; top: 72.5%; width: 14%; height: 6%; }
-  .temperature-module { left: 27%; top: 72.5%; width: 14%; height: 6%; }
-  .inventory { left: 42%; top: 72.5%; width: 14%; height: 6%; }
-  .ordering { left: 57%; top: 72.5%; width: 14%; height: 6%; }
-  .fresh-start { left: 72%; top: 72.5%; width: 14%; height: 6%; }
-
-  .safety { left: 12%; top: 80.5%; width: 14%; height: 6%; }
-  .labor-module { left: 27%; top: 80.5%; width: 14%; height: 6%; }
-  .sales-module { left: 42%; top: 80.5%; width: 14%; height: 6%; }
-  .shrink { left: 57%; top: 80.5%; width: 14%; height: 6%; }
-  .food-safety { left: 72%; top: 80.5%; width: 14%; height: 6%; }
-
-  .ai { left: 10%; top: 88.8%; width: 16%; height: 7%; }
-  .bottom-alerts { left: 26%; top: 88.8%; width: 20%; height: 7%; }
-  .bottom-composite { left: 44%; top: 88.8%; width: 22%; height: 7%; }
-  .bottom-maximo { left: 67%; top: 88.8%; width: 20%; height: 7%; }
+/* bottom nav */
+.ai{left:0%;top:92%;width:25%;height:8%}
+.bottom-alerts{left:25%;top:92%;width:25%;height:8%}
+.bottom-composite{left:50%;top:92%;width:25%;height:8%}
+.bottom-maximo{left:75%;top:92%;width:25%;height:8%}
 </style>
 </head>
 
 <body>
-  <main class="app">
-    <img src="final-home-screen.png" alt="F.R.I.E.N.D. Home Screen">
+<main class="app">
+  <img src="main%20screen.png" alt="F.R.I.E.N.D. Home Screen">
 
-    <a class="btn notifications" href="alerts.html"></a>
-    <a class="btn profile" href="profile.html"></a>
+  <a class="btn notifications" href="alerts.html"></a>
+  <a class="btn profile" href="profile.html"></a>
 
-    <a class="btn production-alert" href="production.html"></a>
-    <a class="btn maximo-alert" href="maximo.html"></a>
-    <a class="btn temperature-alert" href="temperature.html"></a>
+  <a class="btn production-alert" href="production.html"></a>
+  <a class="btn maximo-alert" href="maximo.html"></a>
+  <a class="btn temperature-alert" href="temperature.html"></a>
+  <a class="btn console" href="store-composite.html"></a>
 
-    <a class="btn console" href="store-composite.html"></a>
+  <a class="btn store-scorecard-top" href="store-composite.html"></a>
+  <a class="btn alerts" href="alerts.html"></a>
+  <a class="btn maximo" href="maximo.html"></a>
 
-    <a class="btn store-scorecard-top" href="store-composite.html"></a>
-    <a class="btn alerts" href="alerts.html"></a>
-    <a class="btn maximo" href="maximo.html"></a>
+  <a class="btn temperature" href="temperature.html"></a>
+  <a class="btn sales" href="sales.html"></a>
+  <a class="btn labor" href="labor.html"></a>
 
-    <a class="btn temperature" href="temperature.html"></a>
-    <a class="btn sales" href="sales.html"></a>
-    <a class="btn labor" href="labor.html"></a>
+  <a class="btn production" href="production.html"></a>
+  <a class="btn temperature-module" href="temperature.html"></a>
+  <a class="btn inventory" href="inventory.html"></a>
+  <a class="btn ordering" href="ordering.html"></a>
+  <a class="btn fresh-start" href="fresh-start.html"></a>
 
-    <a class="btn production" href="production.html"></a>
-    <a class="btn temperature-module" href="temperature.html"></a>
-    <a class="btn inventory" href="inventory.html"></a>
-    <a class="btn ordering" href="ordering.html"></a>
-    <a class="btn fresh-start" href="fresh-start.html"></a>
+  <a class="btn safety" href="safety.html"></a>
+  <a class="btn labor-module" href="labor.html"></a>
+  <a class="btn sales-module" href="sales.html"></a>
+  <a class="btn shrink" href="shrink.html"></a>
+  <a class="btn food-safety" href="food-safety.html"></a>
 
-    <a class="btn safety" href="safety.html"></a>
-    <a class="btn labor-module" href="labor.html"></a>
-    <a class="btn sales-module" href="sales.html"></a>
-    <a class="btn shrink" href="shrink.html"></a>
-    <a class="btn food-safety" href="food-safety.html"></a>
-
-    <a class="btn ai" href="index.html"></a>
-    <a class="btn bottom-alerts" href="alerts.html"></a>
-    <a class="btn bottom-composite" href="store-composite.html"></a>
-    <a class="btn bottom-maximo" href="maximo.html"></a>
-  </main>
+  <a class="btn ai" href="index.html"></a>
+  <a class="btn bottom-alerts" href="alerts.html"></a>
+  <a class="btn bottom-composite" href="store-composite.html"></a>
+  <a class="btn bottom-maximo" href="maximo.html"></a>
+</main>
 </body>
 </html>
