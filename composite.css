@@ -4,17 +4,20 @@ html,body{
   margin:0;
   padding:0;
   background:#000;
+  width:100%;
+  min-height:100%;
+  overflow-x:hidden;
 }
 
 body{
-  min-height:100svh;
   display:flex;
   justify-content:center;
   align-items:flex-start;
 }
 
 .phone{
-  width:min(100vw,430px);
+  width:100vw;
+  max-width:430px;
   margin:0 auto;
   background:#000;
   overflow:hidden;
@@ -23,11 +26,13 @@ body{
 .screen{
   position:relative;
   width:100%;
+  margin:0 auto;
   line-height:0;
 }
 
 .screen img{
   width:100%;
+  max-width:100%;
   height:auto;
   display:block;
 }
@@ -37,5 +42,5 @@ body{
   display:block;
   background:transparent;
   text-decoration:none;
-  -webkit-tap-highlight-color:rgba(0,94,255,.25);
+  z-index:10;
 }
