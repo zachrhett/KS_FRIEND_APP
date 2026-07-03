@@ -2,158 +2,48 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport"
-      content="width=device-width,initial-scale=1.0,viewport-fit=cover">
-
-<title>F.R.I.E.N.D.</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F.R.I.E.N.D. Home</title>
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 html,body{
-    width:100%;
-    height:100%;
-    background:#000;
-    overflow:hidden;
-    font-family:Arial,Helvetica,sans-serif;
+  margin:0;
+  padding:0;
+  width:100%;
+  min-height:100%;
+  background:#000;
 }
-
-#app{
-    position:relative;
-    width:100vw;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden;
+.app{
+  position:relative;
+  width:100vw;
+  max-width:430px;
+  margin:0 auto;
 }
-
-#homeImage{
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    display:block;
+.app img{
+  width:100%;
+  height:auto;
+  display:block;
 }
-
-/* Every hotspot */
 .hotspot{
-    position:absolute;
-    display:block;
-    z-index:100;
-    background:rgba(255,255,255,0);
+  position:absolute;
+  display:block;
+  z-index:10;
 }
-
-/* ---------- TOP ---------- */
-
-.storeComposite{
-    left:4%;
-    top:4%;
-    width:92%;
-    height:17%;
-}
-
-/* ---------- SECOND ROW ---------- */
-
-.sales{
-    left:5%;
-    top:24%;
-    width:43%;
-    height:13%;
-}
-
-.operations{
-    right:5%;
-    top:24%;
-    width:43%;
-    height:13%;
-}
-
-/* ---------- THIRD ROW ---------- */
-
-.people{
-    left:5%;
-    top:39%;
-    width:90%;
-    height:14%;
-}
-
-/* ---------- CENTER FRIEND ---------- */
-
-.friendMission{
-    left:26%;
-    top:55%;
-    width:48%;
-    height:22%;
-}
-
-/* ---------- FUTURE MODULES ---------- */
-
-.bottomLeft{
-    left:4%;
-    bottom:4%;
-    width:28%;
-    height:10%;
-}
-
-.bottomCenter{
-    left:36%;
-    bottom:4%;
-    width:28%;
-    height:10%;
-}
-
-.bottomRight{
-    right:4%;
-    bottom:4%;
-    width:28%;
-    height:10%;
-}
+.composite{left:4%;top:5%;width:92%;height:18%;}
+.sales{left:5%;top:25%;width:43%;height:14%;}
+.operations{left:52%;top:25%;width:43%;height:14%;}
+.people{left:5%;top:41%;width:90%;height:15%;}
+.mission{left:22%;top:58%;width:56%;height:18%;}
 </style>
 </head>
-
 <body>
+<div class="app">
+  <img src="main screen.png" alt="F.R.I.E.N.D. Home Screen">
 
-<div id="app">
-
-<img id="homeImage"
-     src="main screen.png"
-     alt="FRIEND Home">
-
-<!-- Store Composite -->
-<a class="hotspot storeComposite"
-   href="store-composite.html"></a>
-
-<!-- Sales -->
-<a class="hotspot sales"
-   href="sales-financial.html"></a>
-
-<!-- Operations -->
-<a class="hotspot operations"
-   href="operations-quality.html"></a>
-
-<!-- People -->
-<a class="hotspot people"
-   href="people-leadership.html"></a>
-
-<!-- FRIEND Guided Mission -->
-<a class="hotspot friendMission"
-   href="store-composite.html"></a>
-
-<!-- Reserved future buttons -->
-<a class="hotspot bottomLeft"
-   href="store-composite.html"></a>
-
-<a class="hotspot bottomCenter"
-   href="sales-financial.html"></a>
-
-<a class="hotspot bottomRight"
-   href="operations-quality.html"></a>
-
+  <a class="hotspot composite" href="store-composite.html"></a>
+  <a class="hotspot sales" href="sales-financial.html"></a>
+  <a class="hotspot operations" href="operations-quality.html"></a>
+  <a class="hotspot people" href="people-leadership.html"></a>
+  <a class="hotspot mission" href="store-composite.html"></a>
 </div>
-
 </body>
 </html>
