@@ -17,8 +17,8 @@ body{
 
 .phone{
   position:relative;
-  width:min(100vw,430px,calc(100svh * 0.6667));
-  aspect-ratio:2/3;
+  width:min(100vw,430px);
+  height:100svh;
   background:#000;
   overflow:hidden;
 }
@@ -33,8 +33,9 @@ body{
 .screen img{
   width:100%;
   height:100%;
-  object-fit:contain;
+  object-fit:fill;
   display:block;
+
 }
 
 .hotspot{
