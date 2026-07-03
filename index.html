@@ -1,86 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>F.R.I.E.N.D. Home</title>
-<style>
-html,body{margin:0;padding:0;background:#000}
-.app{position:relative;width:min(100vw,430px);margin:0 auto}
-.app img{width:100%;height:auto;display:block}
-.btn{position:absolute;display:block;background:transparent}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F.R.I.E.N.D.</title>
+  <style>
+    html, body { margin:0; padding:0; background:#000; }
+    .app { position:relative; width:100vw; max-width:430px; margin:0 auto; }
+    .app img { width:100%; display:block; }
+    .hotspot { position:absolute; display:block; z-index:10; }
 
-/* top */
-.notifications{left:78%;top:2%;width:9%;height:6%}
-.profile{left:88%;top:2%;width:9%;height:6%}
-
-/* hero */
-.production-alert{left:37%;top:18%;width:59%;height:5%}
-.maximo-alert{left:37%;top:23.5%;width:59%;height:5%}
-.temperature-alert{left:37%;top:29%;width:59%;height:7%}
-.console{left:4%;top:38%;width:92%;height:6%}
-
-/* metric cards */
-.store-scorecard-top{left:2%;top:47%;width:31%;height:12%}
-.alerts{left:34.5%;top:47%;width:31%;height:12%}
-.maximo{left:67%;top:47%;width:31%;height:12%}
-
-.temperature{left:2%;top:61%;width:31%;height:12%}
-.sales{left:34.5%;top:61%;width:31%;height:12%}
-.labor{left:67%;top:61%;width:31%;height:12%}
-
-/* modules */
-.production{left:3%;top:77%;width:18%;height:7%}
-.temperature-module{left:22%;top:77%;width:18%;height:7%}
-.inventory{left:41%;top:77%;width:18%;height:7%}
-.ordering{left:60%;top:77%;width:18%;height:7%}
-.fresh-start{left:79%;top:77%;width:18%;height:7%}
-
-.safety{left:3%;top:85%;width:18%;height:7%}
-.labor-module{left:22%;top:85%;width:18%;height:7%}
-.sales-module{left:41%;top:85%;width:18%;height:7%}
-.shrink{left:60%;top:85%;width:18%;height:7%}
-.food-safety{left:79%;top:85%;width:18%;height:7%}
-
-/* bottom nav */
-.ai{left:0%;top:92%;width:25%;height:8%}
-.bottom-alerts{left:25%;top:92%;width:25%;height:8%}
-.bottom-composite{left:50%;top:92%;width:25%;height:8%}
-.bottom-maximo{left:75%;top:92%;width:25%;height:8%}
-</style>
+    .composite { left:5%; top:10%; width:90%; height:18%; }
+    .sales { left:5%; top:29%; width:43%; height:13%; }
+    .operations { left:52%; top:29%; width:43%; height:13%; }
+    .people { left:5%; top:43%; width:90%; height:14%; }
+    .mission { left:25%; top:58%; width:50%; height:20%; }
+  </style>
 </head>
-
 <body>
-<main class="app">
-  <img src="main%20screen.png" alt="F.R.I.E.N.D. Home Screen">
+  <div class="app">
+    <img src="main screen.png" alt="F.R.I.E.N.D. Home Screen">
 
-  <a class="btn notifications" href="alerts.html"></a>
-  <a class="btn profile" href="profile.html"></a>
-  <!-- Replace the broken home links with these working links -->
-
-<a class="btn console" href="store-composite.html"></a>
-<a class="btn store-scorecard-top" href="store-composite.html"></a>
-
-<a class="btn sales" href="sales-financial.html"></a>
-<a class="btn sales-module" href="sales-financial.html"></a>
-
-<a class="btn production" href="operations-quality.html"></a>
-<a class="btn temperature-module" href="operations-quality.html"></a>
-<a class="btn inventory" href="operations-quality.html"></a>
-<a class="btn ordering" href="operations-quality.html"></a>
-<a class="btn safety" href="operations-quality.html"></a>
-<a class="btn shrink" href="operations-quality.html"></a>
-<a class="btn food-safety" href="operations-quality.html"></a>
-
-<a class="btn labor" href="people-leadership.html"></a>
-<a class="btn labor-module" href="people-leadership.html"></a>
-<a class="btn fresh-start" href="people-leadership.html"></a>
-
-<a class="btn bottom-composite" href="store-composite.html"></a>
-<a class="btn ai" href="index.html"></a>
-<a class="btn bottom-alerts" href="store-composite.html"></a>
-<a class="btn bottom-maximo" href="store-composite.html"></a>
-
-</main>
+    <a class="hotspot composite" href="store-composite.html"></a>
+    <a class="hotspot sales" href="sales-financial.html"></a>
+    <a class="hotspot operations" href="operations-quality.html"></a>
+    <a class="hotspot people" href="people-leadership.html"></a>
+    <a class="hotspot mission" href="store-composite.html"></a>
+  </div>
 </body>
 </html>
